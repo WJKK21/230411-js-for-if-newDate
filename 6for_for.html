@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+      let pokemon = ['피카츄','라이츄','파이리','꼬부기','버터플']
+  let root = document.getElementById('root');
+/*   let a = 0;
+  for(
+    let i = 0; i < 10; i ++
+  ) {    console.log("i");
+}
+ */
+/*     for (let i = 0; i<5 ; i ++) {
+      console.log(pokemon[i])
+    }
+
+    for (let i = 0; i<5 ; i ++) {
+      console.log(pokemon[i])
+    } */
+
+/*     for (let i = 0; i<5; i++) {
+      console.log(pokemon[i])
+      console.log(pokemon[i])
+    }
+ */    // 콘솔 로그에 포켓몬 두번 나오게 하고 싶음
+
+
+for (let j = 0; j < 2; j++) { // 2번 반복
+  for (let i = 0; i < pokemon.length; i++) { // 배열 요소 출력
+    console.log(pokemon[i]);
+  }
+}
+
+//반복문을 두번 사용해서 내부에서 1번 굴리고 다시 굴렸구나
+
+  </script>
+</body>
+</html>

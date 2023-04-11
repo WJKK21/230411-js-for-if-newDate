@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="first"></div>
+  <div id="second"></div>
+  <script>
+    const root = document.getElementById('root')
+    const first = document.getElementById('first')
+    const second = document.getElementById('second')
+    
+    function st (tag, value1, value2, value3) {
+      tag.style.width = value1
+      tag.style.height = value2
+      tag.style.border = value3
+    }
+
+    st(root,'500px', '200px', '1px solid black')
+    st(first,'200px', '200px', '1px solid red')
+    st(second,'200px', '200px', '1px solid green')
+    
+    function makeELement(tagName, textNode) {
+      let element = document.createElement(tagName)
+      element.textContent = textNode;
+      element.style.width = '100px'
+      element.style.height = '100px'
+      element.style.backgroundColor = 'tomato'
+      return element
+    }
+
+    first.appendChild(makeELement('li','안녕'))
+    first.appendChild(makeELement('p','과녁'))
+    second.appendChild(makeELement('div','과연'))
+    root.appendChild(makeELement('h1','제목'))
+
+  </script>
+</body>
+</html>

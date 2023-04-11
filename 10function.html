@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="root">
+
+    <h1></h1>
+    <h2></h2>
+  </div>
+  
+  <script>
+   let root = document.getElementById('root');
+   /*   function percentCalCulator(realValue,totalValue ) {
+    let result = (realValue / totalValue) * 100;
+    return result + "%" ;
+  }
+  // 총 100점에서 20 점은 몇 퍼센트? 
+  
+  console.log(percentCalCulator(20, 100)); //20
+  root.children[0].textContent = percentCalCulator(20, 100) ;
+  root.children[1].textContent = percentCalCulator(44, 36790);
+
+  function dd (a,b) {
+    let re = a/b  * 1.2;
+    return re + '%';
+  }
+
+  console.log(dd(4.5,12))
+ */
+
+  function list(aa,bb) {
+    let ele =document.createElement('li')
+    root.appendChild(ele)
+    ele.textContent = aa + bb
+
+  }
+
+  console.log(list('나는','나'))
+  console.log(list('는','나나'))
+  console.log(list('바','나나'))
+
+  function elementmaker (tag, element) {
+    let ele = document.createElement(element)
+    tag.appendChild(ele)
+    ele.textContent = 12
+  }
+
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  console.log(elementmaker(root, 'h1'))
+  </script>
+
+
+</body>
+</html>

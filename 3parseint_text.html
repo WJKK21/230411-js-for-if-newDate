@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <div id="root">
+      <h1>그린컴퓨터 아트학원 3층 자판기</h1>
+  
+      <div>
+        <h2>밀키스 가격</h2>
+        <p>900</p>
+      </div>
+  
+      <div>
+        <h2>코카콜라 가격</h2>
+        <p>2800</p>
+      </div>
+  
+      <div>
+        <h2>원장님 조르기</h2>
+        <p>0</p>
+      </div>
+  
+    </div>
+  <script>
+    let root = document.getElementById('root')
+    let mil = root.children[1].children[1]
+    let coke = root.children[2].children[1]
+    let own = root.children[3].children[1]
+    console.log(mil)
+    console.log(coke)
+    console.log(own)
+    
+    let ele = document.createElement('li')
+    root.appendChild(ele)
+    // let num = Number()
+    function num (number) {
+      //Number = number() ??? 기억이 나지 않는다 
+      return Number(number)
+    }
+    //ele.textContent = num(mil.textContent)  text 안넣었다..
+
+    let milp = parseInt(mil.textContent)
+    console.log(milp)
+    let cokep = parseInt(coke.textContent)
+    console.log(cokep)
+    let ownp = parseInt(own.textContent)
+    console.log(ownp)
+
+    console.log(milp - cokep)
+    console.log(ownp * cokep)
+    console.log(cokep - milp)
+  </script>
+</body>
+</html>

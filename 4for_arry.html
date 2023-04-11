@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+          // 객체 안에 객체, 배열 / 배열 안에 객체, 배열이 가능하다면 for문을 이용해서 이름: xxx 나이: xx 성별: XX 이런 리스트를 자동으로 출력시킬 수 있지 않을까?
+
+    let root = document.getElementById('root')
+
+    let pokemon = ["피카츄", "라이츄", "파이리", "꼬부기", "버터플", "야도란", "피존투", "또가스", "잠만보"];
+    
+    for (i = 1; i<pokemon.length; i ++) {
+      let ele = document.createElement('li')
+      root.appendChild(ele)
+      ele.textContent = pokemon[i]
+    }
+
+    let student = [
+        "강지민",
+        "곽윤호",
+        "권예준",
+        "김동주",
+        "김은아",
+        "김종윤",
+        "김지섭",
+        "김형진",
+        "노수민",
+        "류은이",
+        "박달재",
+        "박수연",
+        "박준형",
+        "성해경",
+        "이경택",
+        "이세민",
+        "이재권",
+        "임지성",
+        "장루빈",
+        "정성철",
+        "정지은",
+        "정희은",
+        "최대건",
+        "한유진",
+        "허진",
+      ];
+
+      for(let i = 0; i < student.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = i + " " + student[i];
+        li.style.backgroundColor = "#ccc";
+        //root.appendChild(li);
+      }
+/*       for(let i = 0; i <= 13; i++) {
+        let p = document.createElement("p");
+        p.textContent = "13 x " + i + " = " + (13*i);
+        root.appendChild(p);
+      }
+ */
+ /*      for (let i = 0; i<13; i++) {
+        let p = document.createElement('p')
+        p.textContent = `13 * ${i} = (13*${i})`
+        root.appendChild(p)
+      } */
+
+      for (let i = 1; i < 13; i++) {
+  let p = document.createElement('p');
+  let result = 13 * i;
+  p.textContent = `13 * ${i} = ${result}`;
+  root.appendChild(p);
+}
+
+  </script>
+</body>
+</html>
