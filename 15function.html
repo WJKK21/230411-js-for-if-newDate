@@ -1,9 +1,9 @@
-
+<!-- 
 <script>
   //The Quick Brown Fox Jumps Over The Lazy Dog 이 되게 만드십시오
   
-  let str = "the quick brown fox jumps over the lazy dog";
-  
+  /* let str = "the quick brown fox jumps over the lazy dog";
+  let
   for (let i = 0; i<str.length; i++) {
     if (str[i] === 't'){
       let d = slice.str[i]
@@ -16,6 +16,31 @@
     }
   console.log(str)
   }
+ */
+
+ let str = "the quick brown fox jumps over the lazy dog";
+let words = str.split(' ');
+//console.log(words) ["the","quick","brown","fox","jumps","over","the","lazy","dog"]
+console.log(words)
+for (let i = 0; i < words.length; i++) {
+/*   let word = words[i];
+  let a = word.charAt(0).toUpperCase() + word.slice(1);
+ */  
+ let word = words[i];
+ words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+
+}
+console.log(words)
+console.log(words.join(' '))
+  console.log(str)
+  console.log(words)
+  //str = words.join(' ')
+
+
+  console.log(str)
+</script>
+ -->
+<script>
 
 
 </script>

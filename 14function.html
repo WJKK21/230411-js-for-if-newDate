@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   // 바나나로 바꿔주세요 
   let str = 'I love apple';
 
@@ -12,5 +12,62 @@ for (let i = 0; i < str.length; i++) {
     let dd = `i love ${bn}`
   }
   str = apple('banana')
+
+</script>
+ 처음 만든 방법 -->
+
+
+ <script>
+  // 배열로 바꿔서 사과를 바나나로
+  let str = 'I love apple';
+
+/*   function apple(bn){
+    let dd = `i love ${bn}`
+  }
+  str = apple('banana')
+ */
+
+  let arr = str.split('');
+  console.log(arr)
+
+ /*  for (let i = 0; i< 5 ; i++) {
+    arr.pop() 
+  }
+  console.log(arr) 
+  * pop() 사용 배열 마지막부터 삭제
+  */
+  arr.splice(7, 5, 'b','a','n','a','n','a') 
+  // splice 기능 찾음 8번째 부터 5개 삭제
+
+  console.log(arr) // i love banana로 나옴
+  console.log(str) // i love apple로 나옴
+
+  str = arr.join()
+  console.log(str)
+  // I, ,l,o,v,e, ,b,a,n,a,n,a
+  str = arr.join('')
+  console.log(str)
+  // I love banana
+  str = arr.join(' ')
+  console.log(str)
+  // I   l o v e   b a n a n a
+</script>
+
+
+
+<script>
+  let st1 = 'i love Vegetable'
+  //let arry = st.split() 'i love Vegetable'
+  let arry1 = st1.split('')
+  console.log(arry1)
+
+  arry1.splice(7, 8)
+  console.log(arry1)
+  arry1.pop()
+  console.log(arry)
+  arry1.push('meat')
+  console.log(arry1)
+  str1 = arry1.join('')
+  console.log(str1)
 
 </script>
